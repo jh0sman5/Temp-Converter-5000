@@ -1,19 +1,19 @@
 # Temperature Converter - Input your temp and current unit - we'll convert it for you! 
 
-## Global Variables
+# Global Variables
 
 Celsius = "Celsius"
 Fahrenheit = "Fahrenheit"
 Kelvin = "Kelvin"
 
-## Welcome Text
+# Welcome Text
 
 print("Hello there!")
 print("Welcome to the Temperature Converter!")
 
 while True:
 
-    ## Obtain Inputs
+# Obtain Inputs
 
     current_unit = input("What is your current temperature unit?\n(1) Celsius\n(2) Fahrenheit\n(3) Kelvin\nPlease enter Fahrenheit, Celsius, or Kelvin: \n")
     print("")
@@ -22,7 +22,7 @@ while True:
     target_unit = input("What unit would you like to convert to?\n(1) Celsius\n(2) Fahrenheit\n(3) Kelvin\nPlease enter Fahrenheit, Celsius, or Kelvin: \n")
     print("")
 
-    ## Calcuate Conversion
+# Calcuate Conversion
 
     if current_unit == "Celsius" and target_unit == "Fahrenheit": 
         new_temp = (float(current_temp) * 9/5) + 32
@@ -50,8 +50,9 @@ while True:
     if again != "yes":
         break
 
-## Goodbye Message
+# Goodbye Message
 
+print("")
 print("Goodbye!")
 print("")
 print("This program was created by Justin Hosman.")
